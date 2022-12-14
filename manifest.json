@@ -1,0 +1,20 @@
+{
+  "short_name": "Cantonese Dictionary",
+  "icons": [
+    {
+      "src": "favicon-192i.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon-512i.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/shirha/raw/ac03b7bdb80204080320763367014d98/index.html",
+  "background_color": "#e8f0fe",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#e8f0fe"
+}

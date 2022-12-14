@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cantonese Dictionary</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" type="image/png" href="favicon-512i.png">
+  </head>
+  <style type="text/css">
+    button {
+      border: 1px solid white;
+      color: black;
+      font-size: 24px;
+      cursor: pointer;
+      /* below same for all buttons */
+      border-radius: 12px;
+      padding: 5px 0px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    button:focus { outline: none; }
+
+    #finals button {
+      background-color: lightblue; 
+      width: 100px;
+    }
+    #finals button.left {
+      background-color: lightgray;
+      font-size: 20px;
+      width: 40px;
+    }
+    #finals button.right {
+      background-color: lightgray;
+      font-size: 20px;
+      width: 40px;
+    }
+    #finals button.freq {
+      background-color: lightgray;
+      font-size: 20px;
+      width: 20px;
+    }
+    #finals button.simp {
+      background-color: #E0B0FF;
+     font-size: 24px;
+      width: 40px;
+    }
+    #finals button#fill {
+      visibility: hidden;
+      width: 60px;
+    }
+
+    #initials button        {background-color: lightgreen; width: 40px;}
+    #initials button#blue   {background-color: lightblue; cursor: default; width: 100px;}
+    #initials button.gray   {background-color: lightgray; cursor: default;}
+    #initials button.purple {background-color: #E0B0FF;   cursor: default;} 
+    #initials button.up     {background-color: lightgray;}
+
+    #homonyms button {
+      background-color: white;
+      border: 1px solid lightgray;
+      font-size: 48px;
+      width: 80px;
+    }
+    #homonyms button#orange {
+      border: 1px solid white;
+      background-color: #ffd27f;
+      font-size: 24px;
+      width: 100px;
+      cursor: default;
+    }
+    #homonyms button.up {
+      border: 1px solid white;
+      background-color: lightgray;
+      font-size: 24px;
+      width: 40px;
+    }
+    .invis  {visibility: hidden;} 
+
+    #contents, #finals, #initials, #homonyms {width: 900px;}
+    #contents {padding-bottom: 900px;}
+
+    body  {font-family: "MS Song";           font-size: 24px;}
+    .s    {font-family: "MS Song"          ; font-size: 48px; color: gray;}
+    .k    {font-family: "AR PL KaitiM Big5"; font-size: 48px;}
+    .c    {color: cornflowerblue; cursor: pointer;}
+    .v    {color: #9900cc;        cursor: pointer;}
+    sup   {       
+      font-size: 16px;
+      vertical-align: baseline;
+      position: relative;
+      top: -1.8em;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="finals"></div>
+      <div id="initials"></div>
+      <div id="homonyms"></div>
+      <div id="contents"></div>
+    </div>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="soundmanager2-jsmin.js"></script>
+    <script src="main.js"></script>
+    <script src="lshk.js"></script>
+  </body>
+</html>
